@@ -1,0 +1,23 @@
+object frmAbout: TfrmAbout
+  Left = 660
+  Height = 240
+  Top = 215
+  Width = 318
+  Caption = 'About'
+  ClientHeight = 240
+  ClientWidth = 318
+  Position = poScreenCenter
+  LCLVersion = '1.8.4.0'
+  object mmoAbout: TMemo
+    Left = 8
+    Height = 226
+    Top = 8
+    Width = 302
+    BorderStyle = bsNone
+    Lines.Strings = (
+      'There''s only so much you can do.'
+    )
+    ReadOnly = True
+    TabOrder = 0
+  end
+end

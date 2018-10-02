@@ -1,0 +1,26 @@
+object frmConfig: TfrmConfig
+  Left = 519
+  Height = 240
+  Top = 194
+  Width = 320
+  Caption = 'Config'
+  ClientHeight = 240
+  ClientWidth = 320
+  LCLVersion = '1.8.4.0'
+  object PageControl1: TPageControl
+    Left = 8
+    Height = 200
+    Top = 32
+    Width = 200
+    TabOrder = 0
+    OnChange = PageControl1Change
+  end
+  object TabControl1: TTabControl
+    Left = 0
+    Height = 30
+    Top = 0
+    Width = 320
+    Align = alTop
+    TabOrder = 1
+  end
+end

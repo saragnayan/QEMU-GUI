@@ -1,0 +1,64 @@
+object frmMain: TfrmMain
+  Left = 347
+  Height = 240
+  Top = 214
+  Width = 440
+  Caption = 'QEMU GUI'
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  LCLVersion = '1.8.4.0'
+  object MainMenu1: TMainMenu
+    left = 8
+    top = 24
+    object mnuFile: TMenuItem
+      Caption = '&File'
+      object mnuOpen: TMenuItem
+        Action = FileOpen1
+      end
+      object mnuSaveAs: TMenuItem
+        Action = FileSaveAs1
+      end
+      object mnuExit: TMenuItem
+        Action = FileExit1
+        OnClick = mnuExitClick
+      end
+    end
+    object mnuSettings: TMenuItem
+      Caption = 'Se&ttings'
+      object mnuConfig: TMenuItem
+        Caption = '&Config'
+        OnClick = mnuConfigClick
+      end
+    end
+    object mnuHelp: TMenuItem
+      Caption = 'H&elp'
+      object mnuAbout: TMenuItem
+        Caption = '&About'
+        OnClick = mnuAboutClick
+      end
+    end
+  end
+  object ActionList1: TActionList
+    left = 104
+    top = 28
+    object Action1: TAction
+      Caption = 'Action1'
+    end
+    object FileOpen1: TFileOpen
+      Category = 'File'
+      Caption = '&Open ...'
+      Hint = 'Open'
+      ShortCut = 16463
+    end
+    object FileSaveAs1: TFileSaveAs
+      Category = 'File'
+      Caption = 'Save &As ...'
+      Hint = 'Save As'
+    end
+    object FileExit1: TFileExit
+      Category = 'File'
+      Caption = 'E&xit'
+      Hint = 'Exit'
+    end
+  end
+end
